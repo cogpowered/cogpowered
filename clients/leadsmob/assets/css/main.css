@@ -59,7 +59,7 @@ strong { font-weight:bold; }
 	font-family:'proxima-nova',sans-serif;
 	font-size:15px;
 	font-weight:bold;
-	padding:18px 22px;
+	padding:16px 22px;
 }
 
 .button.blue {
@@ -205,12 +205,13 @@ footer {
 	}
 	
 	#slider .details {
-		width:70%;
-		margin:120px 0;
+		width:80%;
+		margin:100px auto 0;
+		text-align:center;
 	}
 	
 	#slider .details h1 { 
-		font-size:60px;
+		font-size:52px;
 		font-weight:600;
 		line-height:42px;
 		color:#fff;
@@ -241,19 +242,42 @@ ol.bjqs-markers li{ display:inline; margin:0 5px; }
 ol.bjqs-markers li a{ display:inline-block; text-indent:-9999px; background:url('../img/icons/markers.png') no-repeat center 0; height:14px; width:14px; }
 ol.bjqs-markers li.active-marker a { background-position:0 -14px; }
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+/* signup */
+#signup {
+	padding:200px 0 60px;
+	clear:both;
+	overflow:hidden;
+}	
+
+	#signup h1 {
+		font-size:22px;
+		font-weight:300;
+		color:#335162;
+		float:left;
+		line-height:46px;
+	}
 	
+	#signup span {
+		color:#8E959C;
+	}
+	
+	#signup .buttons {
+		float:right;
+	}
+	
+	#signup .buttons a {
+		margin-left:20px;
+		text-transform:uppercase;
+	}
 
 /* features */
 #features {
-	padding:80px 0;
+	padding:80px 0 50px;
 	clear:both;
 	overflow:hidden;
+	border-top:1px solid #f2f2f2;
 }
-
-	#features .preview {
-		margin-bottom:50px;
-		width:1020px;
-	}
 	
 	#features .features {
 		margin-top:30px;
@@ -261,7 +285,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 	
 	#features .features li {
 		float:left;
-		width:302px;
+		width:470px;
 		margin-bottom:60px;
 	}
 	
@@ -269,22 +293,26 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 		margin:0 57px;
 	}
 	
-	#features .features li img {
+	#features .features li .icon {
 		float:left;
-		margin-right:20px;
-		margin-bottom:20px;
+		width:80px;
+		height:80px;
+		text-align:center;
+		margin-right:40px;
 	}
 	
 	#features .features li h3 {
-		font-size:18px;
+		font-size:22px;
 		font-family:'proxima-nova',sans-serif;
-		font-weight:400;
+		font-weight:500;
 		color:#335162;
-		margin-bottom:10px;
+		margin-bottom:18px;
 	}
 	
 	#features .features li p {
 		color:#8E959C;
+		line-height:26px;
+		font-size:16px;
 	}
 
 
