@@ -20,10 +20,11 @@ body {
     font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     background: #FFF;
+    overflow: hidden;
 }
 
 .container {
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
 }
 
