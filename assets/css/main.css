@@ -1,4 +1,72 @@
+/* BASE CLASSES */
+.centered { width:980px; margin:0 auto; }
 
+.left { float:left; } 
+.right { float:right; }
+
+a { font-size:12px; font-family:'Open Sans',Arial,sans-serif; }
+
+h2, h3 { font-family:'Open Sans',Arial,sans-serif; }
+
+/* CORE STYLES */
+header { height:717px; background:url('../img/header-bg.png') repeat #2F353E; position:relative; overflow:hidden; margin-bottom:25px; }
+header.sub { height:160px; }
+header #logo { background:url('../img/logo.png') no-repeat; width:88px; height:88px; text-indent:-9999px; position:absolute; top:35px; left:446px; }
+header #logo.animation { -webkit-animation-name:logo-rotate; -webkit-animation-duration:15s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name:logo-rotate; -moz-animation-duration:15s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear;} 
+
+header #navigation { list-style:none; position:relative; clear:both; overflow:hidden; height:148px;}
+header #navigation ul { margin-top:35px; }
+header #navigation ul li { display:inline-block; }
+header #navigation ul li > a { line-height:88px; color:#8E959C; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; }
+header #navigation ul li.active > a { color:#fff; }
+header #navigation ul.left li { margin-right:50px; }
+header #navigation ul.right li { margin-left:50px; }
+
+header #headline { margin:0 auto; text-align:center; margin:50px 0;}
+
+header #browser { position:absolute; background:url('../img/previews.png') no-repeat; width:1106px; height:420px; margin-left:-63px; }
+header #shadow { position:absolute; left:0; bottom:-10px; z-index:9999; height:10px; width:100%; box-shadow:0 -1px 5px rgba(0,0,0,0.2);}
+
+
+/* INTRODUCTION */
+#introduction { padding:50px 0; }
+#introduction p { }
+
+
+/* CLIENTS */
+#clients { padding:50px 0; }
+#clients h3, #twitter h3 { background:url("../img/hr.gif") repeat-x center center; font-size:14px; letter-spacing:0.2em; text-align:center; text-transform:uppercase; width:100%; line-height:1em; font-weight:600; }
+#clients h3 span, #twitter h3 span { background:#fff; padding:0 20px; color:#2F353E; }
+#clients h3 span > a, #twitter h3 span > a { font-size:14px; color:#19A9E5; }
+
+#clients #logos { list-style:none; margin-top:60px; }
+#clients #logos li { width:266px; display:inline-block; padding:50px 0; height:210px; } 
+#clients #logos li.top { border-bottom:1px solid #eee; }
+#clients #logos li.left { padding-right:45px; }
+#clients #logos li.right { padding-left:45px; }
+#clients #logos li.center { padding:50px 45px; border-left:1px solid #eee; border-right:1px solid #eee; }
+#clients #logos li > .logo { margin-bottom:20px; }
+#clients #logos li > p { font-size:16px; font-family:'ff-meta-serif-web-pro',sans-serif; color:#8E959C; line-height:24px; }
+#clients #logos li > p.www { margin:0; } #clients #logos li > p.www a { font-size:14px; font-weight:600; color:#2F353E; }
+
+/* GET IN TOUCH */
+#twitter { padding:50px 0; clear:both; overflow:hidden; }
+#twitter .tweet { width:448px; display:inline-block; margin-top:35px; }
+#twitter .tweet.left { padding-right:40px; }
+#twitter .tweet.right { padding-left:40px; }
+#twitter .tweet img { float:left; margin-right:15px; margin-top:2px; }
+#twitter .tweet p { font-family:'ff-meta-serif-web-pro',sans-serif; font-size:16px; color:#8E959C; line-height:24px; margin-top:0; }
+#twitter .tweet > .account { font-family:'Open Sans',sans-serif; text-transform:uppercase; font-size:10px; color:#999; letter-spacing:0.1em; }
+#twitter .tweet > .account a { text-transform:uppercase; font-size:10px; color:#19A9E5; letter-spacing:0.2em; }
+
+footer { border-top:1px solid #f2f2f2; padding:20px 0; overflow:hidden; clear:both; }
+footer ul { list-style:none; }
+footer ul > li { float:right; margin-left:20px; }
+footer ul > li#logo { float:left; margin:0; }
+footer ul > li a { font-weight:500; font-size:11px; text-transform:uppercase; color:#8E959C; letter-spacing:0.1em; }
+
+
+/* ANIMATIONS */
 @-webkit-keyframes logo-rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -15,80 +83,4 @@
   to {
     -moz-transform: rotate(360deg);
   }
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
-       -moz-font-smoothing: antialiased;
-        -ms-font-smoothing: antialiased;
-         -o-font-smoothing: antialiased;
-            font-smoothing: antialiased;
-}
-
-body {
-    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    background: #FFF;
-    overflow: hidden;
-}
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-header {
-    height: 300px;
-    line-height: 300px;
-    background: #333;
-}
-
-header {
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-       -moz-box-shadow: 0 0 4px rgba(0,0,0,0.5);
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-}
-
-header a {
-    text-indent: -9999px;
-    display: block;
-    background: #333 url(../img/logo.png) no-repeat center center;
-    width: 160px;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 70px;
-    -webkit-animation-name:            logo-rotate;
-    -webkit-animation-duration:        15s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-
-    -moz-animation-name:            logo-rotate;
-    -moz-animation-duration:        15s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-}
-
-h1 {
-    margin: 20px 0 40px 0;
-    color: #333;
-    font-size: 60px;
-    font-weight: normal;
-    letter-spacing: -1px;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    margin: 0 0 50px 0;
-}
-
-p a {
-    color: #0d6bc3;
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
 }
