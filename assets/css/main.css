@@ -40,14 +40,17 @@ header #shadow { position:absolute; left:0; bottom:-10px; z-index:9999; height:1
 #clients h3 span > a, #twitter h3 span > a { font-size:14px; color:#19A9E5; }
 
 #clients #logos { list-style:none; margin-top:60px; }
-#clients #logos li { width:266px; display:inline-block; padding:50px 0; height:210px; } 
+#clients #logos li { width:266px; min-height:252px; display:inline-block; padding:50px 0; } 
 #clients #logos li.top { border-bottom:1px solid #eee; }
 #clients #logos li.left { padding-right:45px; }
 #clients #logos li.right { padding-left:45px; }
 #clients #logos li.center { padding:50px 45px; border-left:1px solid #eee; border-right:1px solid #eee; }
 #clients #logos li > .logo { margin-bottom:20px; }
+#clients #logos li img { max-height:50px; }
 #clients #logos li > p { font-size:16px; font-family:'ff-meta-serif-web-pro',sans-serif; color:#8E959C; line-height:24px; }
 #clients #logos li > p.www { margin:0; } #clients #logos li > p.www a { font-size:14px; font-weight:600; color:#2F353E; }
+
+#clients #logos li a.yoursite { font-size:24px; line-height:49px; color:#19A9E5; }
 
 /* GET IN TOUCH */
 #twitter { padding:50px 0; clear:both; overflow:hidden; }
@@ -56,6 +59,7 @@ header #shadow { position:absolute; left:0; bottom:-10px; z-index:9999; height:1
 #twitter .tweet.right { padding-left:40px; }
 #twitter .tweet img { float:left; margin-right:15px; margin-top:2px; }
 #twitter .tweet p { font-family:'ff-meta-serif-web-pro',sans-serif; font-size:16px; color:#8E959C; line-height:24px; margin-top:0; }
+#twitter .tweet p a { font-family:'ff-meta-serif-web-pro',sans-serif; font-size:16px; font-weight:500; }
 #twitter .tweet > .account { font-family:'Open Sans',sans-serif; text-transform:uppercase; font-size:10px; color:#999; letter-spacing:0.1em; }
 #twitter .tweet > .account a { text-transform:uppercase; font-size:10px; color:#19A9E5; letter-spacing:0.2em; }
 
