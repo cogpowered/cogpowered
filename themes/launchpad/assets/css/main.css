@@ -89,14 +89,35 @@ footer {
 
 #header-reserve{
 	float: right;
-	margin-top: 50px; 
+	margin-top: 55px; 
 	line-height: 50px;
 }
 
 	#header-reserve a {
-		line-height: 30px;
-		padding: 0 15px;
+		line-height: 32px;
 		font-size: 14px;
+		text-indent:-9999px;
+		height:32px;
+		width:32px;
+		display:block;
+		margin-left:10px;
+		float:left;
+	}
+	
+	#header-reserve a.twitter {
+		background:url('../img/icons/twitter.png') no-repeat 0 0;
+	}
+	
+	#header-reserve a.twitter:hover { 
+		background-position:0 -32px;
+	}
+	
+	#header-reserve a.facebook {
+		background:url('../img/icons/facebook.png') no-repeat 0 0;
+	}
+	
+	#header-reserve a.facebook:hover { 
+		background-position:0 -32px;
 	}
 
 	
@@ -139,7 +160,7 @@ footer {
 
 #iphone { 
 	position:absolute;
-	top:220px;
+	top:190px;
 	left:32px;
 	width:292px;
 	height:588px;
@@ -159,6 +180,7 @@ footer {
 	padding: 80px 0 42px 0;
 	background: #2F3336;
 	color: #FFF;
+	margin-top:-140px;
 }
 
 	#info h2 {
