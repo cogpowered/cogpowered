@@ -247,6 +247,11 @@ footer {
 		font-size:14px;
 	}
 	
+	#subscribe input[type="text"]:focus {
+		outline:0;
+		border:0;
+	}
+	
 	#subscribe .button {
 		background:#319DD4; 
 		border:none;
