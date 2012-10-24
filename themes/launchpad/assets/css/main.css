@@ -29,6 +29,11 @@ strong { font-weight:bold; }
 .left { float: left; }
 .right { float: right; }
 
+.border-radius {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
 
 /* STYLES
 -----------------------------------------------------------------*/
@@ -216,3 +221,38 @@ footer {
 			color: #FFF;
 			font-weight: 300;
 		}
+		
+/* Subscribe */
+#subscribe {
+	position:relative;
+	background:#2A2E31;
+	padding:60px 0;
+	text-align:center;
+}
+
+	#subscribe h3 {
+		font-size:16px;
+		color:#fff;
+		font-family:'Open Sans', Helvetica, Arial, sans-serif;
+		font-weight:300;
+		margin-bottom:20px;
+	}
+	
+	#subscribe input[type="text"] {
+		background:#fff;
+		border:none; 
+		padding:12px 15px; 
+		width:230px; 
+		font-family:'Open Sans', Helvetica, Arial, sans-serif;
+		font-size:14px;
+	}
+	
+	#subscribe .button {
+		background:#319DD4; 
+		border:none;
+		padding:11px 17px;  
+		font-size:14px;
+		font-weight:bold; 
+		color:#fff; 
+		font-family:'Open Sans', Helvetica, Arial, sans-serif;
+	}
