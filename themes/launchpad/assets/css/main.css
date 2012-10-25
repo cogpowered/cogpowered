@@ -89,16 +89,16 @@ footer {
 
 
 
-/* Launch Home
+/* Main styles
 ----------------------------------------------------------- */
 
-#header-reserve{
+#social {
 	float: right;
 	margin-top: 56px; 
 	line-height: 50px;
 }
 
-	#header-reserve a {
+	#social a {
 		line-height: 32px;
 		font-size: 14px;
 		text-indent:-9999px;
@@ -109,33 +109,33 @@ footer {
 		float:left;
 	}
 	
-	#header-reserve a.twitter {
+	#social a.twitter {
 		background:url('../img/icons/twitter.png') no-repeat 0 0;
 	}
 	
-	#header-reserve a.twitter:hover { 
+	#social a.twitter:hover { 
 		background-position:0 -32px;
 	}
 	
-	#header-reserve a.facebook {
+	#social a.facebook {
 		background:url('../img/icons/facebook.png') no-repeat 0 0;
 	}
 	
-	#header-reserve a.facebook:hover { 
+	#social a.facebook:hover { 
 		background-position:0 -32px;
 	}
 
 	
 /* --- */
 
-#headlines {
+#taglines {
 	width: 1020px;
 	overflow: hidden;
 	text-align:center;
 	margin-top:50px;
 }
 
-	#headlines h1 {
+	#taglines h1 {
 		font-size: 40px;
 		font-weight: 300;
 		line-height: 52px;
@@ -144,12 +144,13 @@ footer {
 		letter-spacing: 3px;
 	}
 	
-	#headlines p {
+	#taglines p {
 		padding-bottom: 16px;
         font-size:16px;
 	}
-		
-#promo {
+	
+/* Browser and iphone previews */	
+#browser {
 	width: 1020px;
 	height: 635px;
 	background: url('../img/promo.png') no-repeat 163px top;
@@ -157,7 +158,7 @@ footer {
 	position:relative;
 }
 
-#promo .browser-preview {
+#browser .browser-preview {
 	position:absolute;
 	right: 38px;
 	margin-top: 84px;
@@ -179,8 +180,8 @@ footer {
 	width:257px;
 }
 
-/* Info */
-#info {
+/* Features */
+#features {
 	position: relative;
 	padding: 80px 0 42px 0;
 	background: #2F3336;
@@ -188,7 +189,7 @@ footer {
 	margin-top:-140px;
 }
 
-	#info h2 {
+	#features h2 {
 		font-size: 25px;
 		line-height: 40px;
 		font-weight: 700;
@@ -196,25 +197,25 @@ footer {
         margin-bottom:50px;
 	}
 	
-	#info ul.three-steps {
+	#features ul.three-steps {
 		width: 1020px;
 		overflow: hidden;
 		margin: 40px 0;
 	}
 	
-		#info ul.three-steps li {
+		#features ul.three-steps li {
 			width: 340px;
 			float: left;
 			text-align: center;
 		}
 		
-		#info ul.three-steps li img {
+		#features ul.three-steps li img {
 			width: 80px;
 			height: 80px;
 			margin-bottom: 24px;
 		}
 		
-		#info ul.three-steps li p {
+		#features ul.three-steps li p {
 			font-size: 14px;
 			line-height: 27px;
 			text-align: center;
