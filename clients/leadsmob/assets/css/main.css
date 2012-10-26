@@ -1,0 +1,175 @@
+body {
+	background: #FFF;
+	font: 12px/14px Helvetica, Arial, sans-serif; 
+	color: #6a6663;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	font-smooth: always;
+}
+
+a {
+    color:#339FD6;
+    text-decoration:none; 
+}
+
+p {
+    font:500 15px/30px 'proxima-nova', Helvetica, Arial, sans-serif;
+    color: #7F95A0;
+    padding: 0;
+	margin: 0;
+}
+
+h1, h2 {
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif; 
+}
+
+strong { font-weight:bold; }
+
+/* VAR */
+
+.left { float: left; }
+.right { float: right; }
+
+.border-radius {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+/* STYLES
+-----------------------------------------------------------------*/
+
+.wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.content {
+	width: 1020px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+
+/* Basics --------------------------- */
+
+header {
+	width: 100%;
+	height: 114px;
+	margin: 0;
+	padding: 0;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+footer {
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+/* MAIN STYLES
+----------------------------------------------------------- */
+
+#topnav {
+	float:right;
+}
+
+	#topnav ul {
+		display:block;
+	}
+	
+	#topnav ul li {
+		display:inline-block;
+		margin-left:30px;
+	}
+	
+	#topnav ul li a {
+		font-family:'proxima-nova',sans-serif;
+		font-size:18px;
+		font-weight:600;
+		color:#213A49;
+		display:block;
+		padding:48px 0;
+	}
+	
+	#topnav ul li.active a {
+		color:#25AAE1;
+	}
+
+/* footer */
+#footer {
+	background: #213A49;
+	color: #7F95A0;
+}
+
+	#footer h2 {
+		color:#92C7DE;
+		font-size:18px;
+		font-weight:500;
+		margin:0 0 15px;
+		padding:0;
+	}
+
+	#footer .row {
+		width: auto;
+		padding:25px 0;
+		clear:both;
+		overflow:hidden;
+	}
+	
+	#footer .row.sitemap {
+		padding:60px 0;
+	}
+	
+	#footer .row.copyright {
+		background:#1F3543;
+	}
+	
+	#footer .column {
+		width: 225px;
+		margin:0 25px 0 0;
+		float:left;
+	}
+	
+	#footer .column li {
+		font-size:14px;
+	}
+	
+	#footer .column li a {
+		color:#7F95A0;
+		display:block;
+		font-family:'proxima-nova', sans-serif;
+		font-weight:400;
+		line-height:28px;
+	}
+	
+	#footer .copyright {
+		font-size:14px;
+	}
+
+	
+/* PAGE STYLES
+----------------------------------------------------------- */
+
+/* slider */
+#slider {
+	height:600px;
+	background:#213A49;
+}
+
+	#slider .slide {
+	
+	}
+	
+	#slider .arrows {
+	
+	}
+	
+
+/* features */
+#features {
+	height:1200px;
+}
