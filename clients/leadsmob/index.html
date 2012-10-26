@@ -14,6 +14,9 @@
 	
 	<script type="text/javascript" src="//use.typekit.net/hbd2gyr.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="assets/js/slider.js"></script>
 
 </head>
 <body>
@@ -33,7 +36,7 @@
 					<li><a href="#">Compare</a></li>
 					<li><a href="#">Pricing</a></li>
 					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Contact</a></li>
+					<li class="login"><a href="#" class="border-radius">Account Login</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -42,10 +45,26 @@
 	<!-- Slider -->
 	<section id="slider">
 		<div class="content">
-			<div id="taglines">
-				<h1>Beautiful themes for the web and mobile</h1>
-				<p>Launchpad is a premium template for showcasing your product thats coming soon.</p>
-			</div>
+			<ul class="slider">
+				<li>
+					<div class="details">
+						<h1>Email Autoresponder</h1>
+						<p>Send emails to your subscribers automatically. Looks beautiful from any desktop, tablet or mobile device.</p>
+					</div>
+				</li>
+				<li>
+					<div class="details">
+						<h1>Newsletter Templates</h1>
+						<p>Create elegant newsletters from dozens of professionally created designs.</p>
+					</div>
+				</li>
+				<li>
+					<div class="details">
+						<h1>Phonecall Tracking</h1>
+						<p>Track which customers call your business, from every text and email message.</p>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 	
@@ -111,6 +130,19 @@
 			</div>
 		</div>
 	</footer>
+	
+	<!-- Scripts -->
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#slider .content').bjqs({
+            height      : 600,
+            width       : 1020,
+            responsive  : false
+          });
+
+        });
+    </script>
 	
 </body>
 </html>

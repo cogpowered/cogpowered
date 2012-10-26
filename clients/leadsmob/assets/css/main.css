@@ -88,15 +88,24 @@ footer {
 	
 	#topnav ul li a {
 		font-family:'proxima-nova',sans-serif;
-		font-size:18px;
+		font-size:15px;
 		font-weight:600;
 		color:#213A49;
 		display:block;
 		padding:48px 0;
 	}
 	
+	#topnav ul li:hover a {
+		color:#25AAE1;
+	}
+	
 	#topnav ul li.active a {
 		color:#25AAE1;
+	}
+	
+	#topnav ul li.login a {
+		border:1px solid #e5e5e5;
+		padding:13px 18px 14px;
 	}
 
 /* footer */
@@ -160,13 +169,42 @@ footer {
 	background:#213A49;
 }
 
-	#slider .slide {
-	
+	#slider .slider {
+		position:relative; 
+		list-style:none;
+		padding:0;
+		margin:0;
+		overflow:hidden; 
+		display:none; 
 	}
 	
-	#slider .arrows {
-	
+	#slider .details {
+		width:50%;
+		margin:120px 0;
 	}
+	
+	#slider .details h1 { 
+		font-size:42px;
+		font-weight:600;
+		line-height:42px;
+		color:#fff;
+		margin-bottom:30px;
+	}
+	
+	#slider .details p {
+		font-size:18px;
+		font-weight:500;
+		text-shadow:0 -1px rgba(0,0,0,0.2);
+	}
+	
+/* Basic jQuery Slider essential styles */
+li.bjqs-slide{position:absolute; display:none;}
+ol.bjqs-markers{ position:absolute; bottom:50px; list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{ display:inline; margin:0 5px; }
+ol.bjqs-markers li a{ display:inline-block; text-indent:-9999px; background:url('../img/icons/markers.png') no-repeat center 0; height:14px; width:14px; }
+ol.bjqs-markers li.active-marker a { background-position:0 -14px; }
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 	
 
 /* features */
