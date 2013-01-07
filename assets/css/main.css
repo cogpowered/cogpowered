@@ -122,6 +122,30 @@ footer #sitemap ul.right li { margin-left:50px; }
 #browser { opacity:0; }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width : 320px) {
+	.section { padding:5em 0; }
+	.centered { max-width:280px; }
+	
+	/* what we do */
+	#about h2 { font-size:30px; line-height:1.3em; }
+	#about p { font-size:16px; max-width:80%; }
+	
+	#about .devices img { width:100%; }
+	
+	/* our work */
+	#clients { padding:6em 0; }
+	#clients h2 { font-size:30px; line-height:1.3em; }
+	#clients p { font-size:16px; max-width:80%; }
+	
+	/* our team */
+	#team .about h2 { font-size:30px; line-height:1.3em; }
+	#team .about p { font-size:16px; max-width:80%; }
+	
+	/* contact us */
+	#contact { padding:30px 0; }
+	#contact .info { max-width:280px; }
+}
+
 @media only screen and (max-width: 480px) {
 
 	.section { padding:6em 0; }
