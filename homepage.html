@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="assets/css/reset.css">
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800">
 	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.js"></script>
+	<script type="text/javascript" src="assets/js/animations.js"></script>
+	
 	<script type="text/javascript" src="//use.typekit.net/qek1zlw.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
@@ -33,103 +37,142 @@
                 </ul>
             </nav>
             
-            <div id="headline">
-                <h1><img src="assets/img/temp-heading.png" /></h1>
-            </div>
+			<div id="headline">
+				<h1>Beautiful websites built on solid, sturdy code.</h1>
+				<h2>Web development done right. Get in touch with us about your project.</h2>
+			</div>
             
-            <div id="browser"></div>
+            <div id="browser" class="browser"></div>
             <div id="shadow"></div>
         </div>
 	</header>
     
-	
-	<section id="clients">
-        <div class="centered">
-            <h3><span>We've worked with a <a href="http://www.cogpowered.com/clients/" title="Our great clients">great bunch</a> of awesome clients</span></h3>
-            <ul id="logos">
-                <li class="top left">
-                    <a href="http://artistsandillustrators.co.uk" class="artists"><img src="assets/img/clients/artists.png" /></a>
-                    <p>Artists & Illustrators is the UK's biggest and best magazine for artists and art lovers. Providing advice and inspiration in every issue to art enthusiasts.</p>
-                    <p class="www"><a href="http://artistsandillustrators.co.uk">http://artistsandillustrators.co.uk</a></p>
-                </li>
-                <li class="top center">
-                    <a href="http://chelseamagazines.com" class="artists"><img src="assets/img/clients/chelsea.png" /></a>
-                    <p>The Chelsea Magazine Company is an independent publishing company run by an expert team of creative and marketing professionals, with offices in the United Kingdom and North America.</p>
-                    <p class="www"><a href="http://chelseamagazines.com">http://chelseamagazines.com</a></p>
-					<div class="clearfix"></div>
-				</li>
-                <li class="top right">
-                    <a href="http://britain-magazine.com/" class="artists"><img src="assets/img/clients/britain.png" /></a>
-                    <p>Britain Magazine is the official magazine of Britain. Find out everything about the country's rich history.</p>
-                    <p class="www"><a href="http://www.britain-magazine.com/">http://britain-magazine.com/</a></p>
-					<div class="clearfix"></div>
-				</li>
-                <li class="left">
-                    <a href="http://yachtsandyachting.co.uk/" class="artists"><img src="assets/img/clients/yachts.png" /></a>
-                    <p>Yachts and Yachting is the magazine for dinghy and keelboat racers - essential reading for anyone who is serious about the sport of sailing.</p>
-                    <p class="www"><a href="http://yachtsandyachting.co.uk/">http://yachtsandyachting.co.uk/</a></p>
-                </li>
-                <li class="center">
-                    <a href="http://classicboat.co.uk" class="artists"><img src="assets/img/clients/classicboat.png" /></a>
-                    <p>Classic Boat is the magazine devoted to the world's most beautiful boats. Every month Classic Boat showcases the world's most beautiful classic yachts alongside a wealth of news.</p>
-                    <p class="www"><a href="http://classicboat.co.uk">http://classicboat.co.uk</a></p>
-                </li>
-                <li class="right">
-                    <a href="http://www.cogpowered.com/portfolio/" class="yoursite">Your Site</a>
-                    <p>We are currently taking on new clients, get in touch today for more information about our services and lets build that website you've always wanted.</p>
-                    <p class="www"><a href="#">http://yoursite.com</a></p>
-                </li>
-            </ul>
-        </div>
+	<section id="about" class="clearfix">
+		<div class="centered">
+			<h2>We build <em>responsive</em> sites for the web and mobile</h2>
+			<p>We're a small team that focus on creating beautiful user experiences for the web and mobile. We've worked with some great clients over the past few months.</p>
+		
+			<div class="whatwedo">
+			
+			</div>
+			<div class="devices">
+				<img src="assets/img/devices.png" />
+			</div>
+		</div>
 	</section>
-    
-    
-    <section id="twitter">
-        <div class="centered">
-            <h3><span>Follow the teams <a href="http://twitter.com/cogpowered" title="Read a few case studies from our customers">twitter</a> ramblings</span></h3>
-            <div class="tweet left">
-                <img src="assets/img/avatars/tomasbryan.png" />
-                <p id="matt-tweet">Great work, <a href="http://twitter.com/creativemarket">@CreativeMarket</a> The site looks amazing! </p>
-                <div class="account">
-                    <a href="#">tomasbryan</a> 2 days ago
-                </div>
-            </div>
-            
-            <div class="tweet right">
-                <img src="assets/img/avatars/mattgaunt.png" />
-                <p id="tom-tweet">So, we just launched our new website and we're pretty proud of the outcome. Let us know what you think!</p>
-                <div class="account">
-                    <a href="#">mattgaunt</a> an hour ago
-                </div>
-            </div>
-        </div>
-    </section>
-    
+	
+	<section id="work" class="clearfix">
+		<div class="centered">
+			<h2>We've worked with a <em>great bunch</em> of awesome clients</h2>
+			<p>We're a small team that focus on creating beautiful user experiences for the web and mobile. We've worked with some great clients over the past few months.</p>
+	
+			<ul class="items clearfix">
+				<li class="top">
+					<a href="http://chelseamagazines.com">
+						<img src="assets/img/clients/chelsea.png" title="Chelsea Magazines" />
+						<h3>Chelsea Magazines</h3>
+						<p>Online platform for magazine distribution.</p>
+					</a>
+				</li>
+				<li class="top">
+					<a href="http://artistsandillustrators.co.uk">
+						<img src="assets/img/clients/artists.png" title="Artists &amp; Illustrators" />
+						<h3>Artists and Illustrators</h3>
+						<p>An online marketplace for art enthusiasts.</p>
+					</a>
+				</li>
+				<li class="top">
+					<a href="http://egl.tv">
+						<img src="assets/img/clients/egl.png" title="European Gaming League" />
+						<h3>European Gaming League</h3>
+						<p>Europes largest tourmnament organisers.</p>
+					</a>
+				</li>
+				<li>
+					<a href="http://cogpowered.com/clients/leadsmob/">
+						<img src="assets/img/clients/leadsmob.png" title="LeadsMob" />
+						<h3>LeadsMob</h3>
+						<p>An all-in-one social marketing platform.</p>
+					</a>
+				</li>
+				<li>
+					<a href="http://gamesdai.ly">
+						<img src="assets/img/clients/gamesdaily.png" title="GamesDaily" />
+						<h3>GamesDaily</h3>
+						<p>Your custom gaming feed for latest news.</p>
+					</a>
+				</li>
+				<li>
+					<a href="http://creativemarket.com/cogpowered">
+						<img src="assets/img/clients/creative.png" title="Creative Market" />
+						<h3>Creative Market</h3>
+						<p>We sell templates over at CreativeMarket.</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="team" class="clearfix">
+		<div class="centered">
+			<div class="about">
+				<h2>We're an <em>enthusiastic bunch</em> who love what we do</h2>
+				<p>We're a small team that focus on creating beautiful user experiences for the web and mobile. We've worked with some great clients over the past few months.</p>
+				<ul class="social">
+					<li><a class="github" href="http://github.com/cogpowered/" target="_blank">View our code on Github</a></li>
+					<li class="nomargin"><a class="twitter" href="http://twitter.com/cogpowered" target="_blank">Follow us on twitter</a></li>
+				</ul>
+			</div>
+			
+			<ul class="staff clearfix">
+				<li>
+					<img src="assets/img/avatars/mattgaunt.png" class="avatar" />
+					<h3>Matthew Gaunt</h3>
+					<span>Founder / Developer</span>
+				</li>
+				<li>
+					<img src="assets/img/avatars/tomasbryan.png" class="avatar" />
+					<h3>Thomas Bryan</h3>
+					<span>Founder / Designer</span>
+				</li>
+				<li class="nomargin">
+					<img src="assets/img/avatars/robertcrowe.jpg" class="avatar" />
+					<h3>Robert Crowe</h3>
+					<span>Technical Whizkid</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<div class="centered">
+			<div class="info">
+				<ul>
+					<li>Address <span class="address">20 Sefton Avenue<br/>NG9 8EA<br/>United Kingdom</span></li>
+					<li>Phone <span>+44 7427 164884</span></li>
+					<li class="last">Email <span><a href="mailto:enquiries@cogpowered.com">enquiries@cogpowered.com</a></span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
     
 	<footer>
         <div class="centered">
-            <ul>
-                <li id="logo"><a href="http://www.cogpowered.com">Made by Cog</a></li>
-                <li><a href="http://twitter.com/cogpowered" title="Twitter">Follow us on twitter</a></li>
-                <li><a href="http://dribbble.com/cogpowered" title="Dribbble">Our work on Dribbble</a></li>
-            </ul>
-        </div>
+			<nav id="sitemap">
+				<ul class="left">
+                    <li><a href="/our-clients">Our Clients</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/our-sites">Our Sites</a></li>
+                </ul>
+				<div class="logo"></div>
+				<ul class="right">
+                    <li><a href="/what-we-do">What we do</a></li>
+                    <li><a href="http://cogpowered.com/blog">The Blog</a></li>
+                    <li><a href="mailto:matt@cogpowered.com">Contact Us</a></li>
+                </ul>
+			</nav>
+		</div>
 	</footer>
-	
-
-	<script type="text/javascript">
-	  var _gauges = _gauges || [];
-	  (function() {
-	    var t   = document.createElement('script');
-	    t.type  = 'text/javascript';
-	    t.async = true;
-	    t.id    = 'gauges-tracker';
-	    t.setAttribute('data-site-id', '4fe395b2f5a1f55a4500004e');
-	    t.src = '//secure.gaug.es/track.js';
-	    var s = document.getElementsByTagName('script')[0];
-	    s.parentNode.insertBefore(t, s);
- 	 })();
-	</script>
 
 </body>
 </html>
