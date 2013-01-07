@@ -1,0 +1,47 @@
+body { font-family:'proxima-nova', Helvetica, Arial, sans-serif; }
+a { color:#717883; }
+
+.clearfix { clear:both; overflow:hidden; }
+
+/* header */
+header { padding:10%; position:relative; clear:both; overflow:hidden; }
+header.gamesdaily { background-color:#212C30; }
+
+header h1.logo { position:absolute; left:10%; top:88px; margin-top:0; }
+
+header .menu { position:absolute; right:10%; top:8em; }
+header .menu > li { display:inline-block; margin-right:50px; }
+header .menu > li > a { font-size:150%; color:#C5CCD7; text-transform:uppercase; font-weight:100; }
+header .menu > li.active > a { color:#fff; border-bottom:1px solid #E94A04; }
+
+header .details { width:40%; float:left; text-align:left; margin-top:94px; }
+header .details p { font-size:350%; font-weight:100; line-height:1.6; color:#fff; }
+header .details .links { margin:5% 0 0; list-style:none; }
+header .details .links > li { font-size:22px; margin-right:50px; display:inline-block; }
+header .details .links > li > a { font-weight:100; }
+header .details .links > li.twitter > a { background:url('../img/icons/twitter.png') no-repeat left center; padding-left:41px; }
+header .details .links > li.www > a { background:url('../img/icons/www.png') no-repeat left center; padding-left:38px; }
+
+header .details .logo { margin:0 0 5%; }
+header .details .logo > img { margin-left:2px; }
+
+header .preview { position:absolute; width:60%; right:-8%; top:30%; }
+header .preview > img { box-shadow:0 1px 8px rgba(0,0,0,0.28);border-radius:7px; }
+
+/* statistics bar */
+#statistics  { border-bottom:1px solid #eee; width:80%; padding:3% 10%; list-style:none; color:#717883; clear:both; overflow:hidden; }
+#statistics .stats { float:left; margin-top:-2px; }
+#statistics .stats > li { display:inline-block; font-size:16px; text-transform:uppercase; margin-right:60px; font-weight:600; color:#5E6979; }
+#statistics .stats > li span { display:block; font-size:32px; font-weight:100; text-transform:none; color:#717883; }
+
+#statistics .press { float:right; }
+#statistics .press .button { display:block; background:#EA4B05; border-radius:5px; color:#fff; padding:12px 30px; font-size:28px; font-weight:500; text-shadow:0 -1px rgba(0, 0, 0, 0.05); }
+
+/* featured on */
+#featured { padding:5% 10%; }
+
+/* footer */
+footer { padding:6em 10%; font-family:'proxima-nova-alt', Helvetica, Arial, sans-serif; font-size:16px; color:#9CA3AE; }
+footer .menu { margin:3em 0 0; padding:3em 0 0; border-top:1px solid #eee; text-align:center; }
+footer .menu > li { display:inline-block; margin-right:15px; }
+footer .menu > li > a { font-weight:300; }
