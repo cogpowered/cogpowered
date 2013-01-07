@@ -57,7 +57,7 @@ footer #sitemap ul.right li { margin-left:50px; }
 #about .devices img { z-index:-1; }
 
 /* our work */
-#clients { padding:13em; }
+#clients { padding:13em 0; }
 #clients h2 { font-size:44px; font-weight:100; margin:0; line-height:1em; text-align:center; color:#2F353E; }
 #clients h2 em { font-style:normal; color:#19A9E5; }
 #clients p { font-size:22px; font-weight:100; text-align:center; color:#8E959C; line-height:1.8; margin:20px auto 0; max-width:75%; }
@@ -120,3 +120,33 @@ footer #sitemap ul.right li { margin-left:50px; }
 #navigation { opacity:0; }
 #headline { opacity:0; }
 #browser { opacity:0; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 480px) {
+
+	.section { padding:6em 0; }
+	.centered { max-width:430px; }
+	
+	/* what we do */
+	#about h2 { font-size:32px; line-height:1.3em; }
+	#about p { font-size:18px; max-width:80%; }
+	
+	#about .devices img { width:100%; }
+	
+	/* our work */
+	#clients { padding:7em 0; }
+	#clients h2 { font-size:32px; line-height:1.3em; }
+	#clients p { font-size:18px; max-width:80%; }
+	
+	/* our team */
+	#team .about h2 { font-size:32px; line-height:1.3em; }
+	#team .about p { font-size:18px; max-width:80%; }
+
+	/* contact us */
+	#contact { padding:30px 0; }
+	#contact .info { width:340px; margin:0 auto; }
+	
+	footer { padding:2em 0; }
+	footer #sitemap ul{ display:none; }
+	footer .logo { position:relative; top:0; left:0; right:0; margin:0 auto; }
+}
