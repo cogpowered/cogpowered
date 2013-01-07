@@ -15,9 +15,22 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.easing.js"></script>
 	<script type="text/javascript" src="assets/js/animations.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.pagescroller.js"></script>
 	
 	<script type="text/javascript" src="//use.typekit.net/qek1zlw.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// initiate page scroller plugin
+			$('body').pageScroller({
+				navigation: '#navigation .link',
+				sectionClass: 'section'
+			});
+							
+		});	
+	</script>
 </head>
 <body>
 	
@@ -25,15 +38,15 @@
         <div class="centered">
             <nav id="navigation">
                 <ul class="left">
-                    <li class="active"><a href="#about">What we do</a></li>
-                    <li><a href="#clients">Our Clients</a></li>
-                    <li><a href="#team">The team</a></li>
+                    <li class="active link"><a href="#">What we do</a></li>
+                    <li class="link"><a href="#">Our clients</a></li>
+                    <li class="link"><a href="#">The team</a></li>
                 </ul>
                 <div id="logo" class="animation"></div>
                 <ul class="right">
-                    <li><a href="#contact">Contact us</a></li>
-                    <li><a href="http://cogpowered.com/blog">The Blog</a></li>
-                    <li><a href="http://bigblast.co" target="_blank">Our Projects</a></li>
+                    <li class="link"><a href="#">Contact us</a></li>
+                    <li><a href="http://cogpowered.com/blog">The blog</a></li>
+                    <li><a href="http://bigblast.co" target="_blank">Our projects</a></li>
                 </ul>
             </nav>
             
@@ -47,7 +60,7 @@
         </div>
 	</header>
     
-	<section id="about" class="clearfix">
+	<section id="about" class="clearfix section">
 		<div class="centered">
 			<h2>We build <em>responsive</em> sites for the web and mobile</h2>
 			<p>We're a small team that focus on creating beautiful user experiences for the web and mobile. We've worked with some great clients over the past few months.</p>
@@ -58,7 +71,7 @@
 		</div>
 	</section>
 	
-	<section id="clients" class="clearfix">
+	<section id="clients" class="clearfix section">
 		<div class="centered">
 			<h2>We've worked with a <em>great bunch</em> of awesome clients</h2>
 			<p>We're a small team that focus on creating beautiful user experiences for the web and mobile. We've worked with some great clients over the past few months.</p>
@@ -110,7 +123,7 @@
 		</div>
 	</section>
 	
-	<section id="team" class="clearfix">
+	<section id="team" class="clearfix section">
 		<div class="centered">
 			<div class="about">
 				<h2>We're an <em>enthusiastic bunch</em> who love what we do</h2>
@@ -141,7 +154,7 @@
 		</div>
 	</section>
 	
-	<section id="contact">
+	<section id="contact" class="section">
 		<div class="centered">
 			<div class="info">
 				<ul>
@@ -157,13 +170,13 @@
         <div class="centered">
 			<nav id="sitemap">
 				<ul class="left">
-                    <li><a href="#about">What we do</a></li>
-                    <li><a href="#clients">Our clients</a></li>
-                    <li><a href="#team">The team</a></li>
+                    <li class="link"><a href="#about">What we do</a></li>
+                    <li class="link"><a href="#clients">Our clients</a></li>
+                    <li class="link"><a href="#team">The team</a></li>
                 </ul>
 				<div class="logo"></div>
 				<ul class="right">
-                    <li><a href="#contact">Contact us</a></li>
+                    <li class="link"><a href="#contact">Contact us</a></li>
                     <li><a href="http://cogpowered.com/blog">The Blog</a></li>
                     <li><a href="http://bigblast.co" target="_blank">Our projects</a></li>
                 </ul>
