@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Cog Powered" default="build">
+
+    <target name="build">
+
+        <delete file="assets/css/build.css" />
+
+        <copy file="assets/css/reset.css" tofile="assets/css/one-reset.css" />
+        <copy file="assets/css/main.css" tofile="assets/css/two-main.css" />
+
+        <append destFile="assets/css/build.css">
+            <fileset dir="assets/css">
+                <include name="one-reset.css" />
+                <include name="two-main.css" />
+            </fileset>
+        </append>
+
+        <exec command="java -jar tools/yuicompressor-2.4.7.jar -o assets/css/build-min.css assets/css/build.css" />
+
+        <delete file="assets/css/build.css" />
+        <delete file="assets/css/one-reset.css" />
+        <delete file="assets/css/two-main.css" />
+
+        <move file="assets/css/build-min.css" tofile="assets/css/build.css" />
+
+    </target>
+
+</project>
