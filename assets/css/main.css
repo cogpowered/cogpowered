@@ -64,11 +64,15 @@ footer #sitemap ul.right li { margin-left:50px; }
 #clients .items { list-style:none; margin:-20px; margin-top:50px; }
 #clients .items li { float:left; margin:20px; width:346px; overflow:hidden; }
 #clients .items li.top { margin-bottom:40px; }
-#clients .items li a { display:block; }
+#clients .items li a { display:block; position:relative; }
+#clients .items li a.inactive { cursor:default; }
 #clients .items li a:hover h3 { color:#19A9E5; -webkit-transition: color .25s, background .25s, opacity .25s; -moz-transition: color .25s, background .25s, opacity .25s; -ms-transition: color .25s, background .25s, opacity .25s; -o-transition: color .25s, background .25s, opacity .25s; transition: color .25s, background .25s, opacity .25s; }
 #clients .items li a > img { width:100%; }
 #clients .items li a > h3 { margin:20px 0 10px 0; color:#2F353E; font-weight:300; font-size:22px; }
 #clients .items li a > p { font-weight:100; color:#8E959C; font-size:18px; margin:0; text-align:left; line-height:22px; max-width:100%; }
+#clients .items li a .hover { opacity:0; position:absolute; top:0; left:0; width:346px; height:240px; background:#ED733F; color:#fff; text-align:center; font-size:23px; font-weight:300; line-height:240px; }
+#clients .items li a:hover .hover { opacity:0.95; }
+#clients .items li a .hover.inactive { cursor:normal; }
 
 /* our team */
 #team .about { width:100%; margin:0 auto; text-align:center; }
