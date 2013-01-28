@@ -75,6 +75,7 @@ footer #sitemap ul.right li { margin-left:50px; }
 #team .about h2 { font-size:44px; font-weight:100; margin:0; line-height:1.2em; color:#2F353E; }
 #team .about h2 em { font-style:normal; color:#19A9E5; }
 #team .about p { font-size:22px; font-weight:100; color:#8E959C; line-height:1.8; max-width:75%; margin:20px auto 0; }
+#team .about p a { font-size:22px; font-weight:100; color:#ED733F; }
 #team .social { list-style:none; width:630px; margin:32px auto 0; }
 #team .social li { display:inline-block; margin:10px 0 0 0; margin-right:50px; }
 #team .social li.nomargin { margin-right:0; }
@@ -121,56 +122,79 @@ footer #sitemap ul.right li { margin-left:50px; }
 #headline { opacity:0; }
 #browser { opacity:0; }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width : 320px) {
-	.section { padding:5em 0; }
-	.centered { max-width:280px; }
-	
-	/* what we do */
-	#about h2 { font-size:30px; line-height:1.3em; }
-	#about p { font-size:16px; max-width:80%; }
-	
-	#about .devices img { width:100%; }
-	
-	/* our work */
-	#clients { padding:6em 0; }
-	#clients h2 { font-size:30px; line-height:1.3em; }
-	#clients p { font-size:16px; max-width:80%; }
-	
-	/* our team */
-	#team .about h2 { font-size:30px; line-height:1.3em; }
-	#team .about p { font-size:16px; max-width:80%; }
-	
-	/* contact us */
-	#contact { padding:30px 0; }
-	#contact .info { max-width:280px; }
-}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
-@media only screen and (max-width: 480px) {
+   
+   /* iPads (portrait and landscape) ----------- */
+   @media only screen and (min-width : 768px) and (max-width : 1024px) {
+       
+       header {
+           padding: 1em 0 0 0;
+        }
+       
+       .centered {
+               width:700px;
+          }
+          
+          h1 {
+              font-size: 2.3em;
+          }
+          
+          h2 {
+              font-size: 0.7em;
+          }
+       
+   }
+   
+   /* Smartphones (portrait and landscape) ----------- */
+     @media only screen and (min-width : 0px) and (max-width : 768px) {
+         
+        p {
+            font-size: 0.8em;
+		}
+      
+        html,body
+		{
+            overflow-x:hidden;
+        }
+         
+        .centered {
+			width:290px;
+			text-align:center;
+		}
+         
+        header{
+            padding:0.6em 0 0.6em 0;
+        }
+         
+          h1 {
+               font-size: 1.5em;
+               margin-bottom:0;margin-top:0;
+               text-indent: 15px;
+           }
 
-	.section { padding:6em 0; }
-	.centered { max-width:430px; }
-	
-	/* what we do */
-	#about h2 { font-size:32px; line-height:1.3em; }
-	#about p { font-size:18px; max-width:80%; }
-	
-	#about .devices img { width:100%; }
-	
-	/* our work */
-	#clients { padding:7em 0; }
-	#clients h2 { font-size:32px; line-height:1.3em; }
-	#clients p { font-size:18px; max-width:80%; }
-	
-	/* our team */
-	#team .about h2 { font-size:32px; line-height:1.3em; }
-	#team .about p { font-size:18px; max-width:80%; }
+           h2 {
+               font-size: 0.7em;
+               margin:0;
+               float:none;
+           }
 
-	/* contact us */
-	#contact { padding:30px 0; }
-	#contact .info { width:340px; margin:0 auto; }
-	
-	footer { padding:2em 0; }
-	footer #sitemap ul{ display:none; }
-	footer .logo { position:relative; top:0; left:0; right:0; margin:0 auto; }
-}
+     }
+   
+   /* Retina ----------- */
+   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min-resolution: 144dpi) {
+
+   }
+   
+   /*iPhone5 Landscape-----*/
+   @media only screen and (min-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+       
+   }
+   
+   /*Pre iPhone-5 (Height)------*/
+
+   @media only screen and (max-device-height : 480px) {
+
+   }
