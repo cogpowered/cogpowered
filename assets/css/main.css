@@ -165,8 +165,8 @@ footer #sitemap ul.right li { margin-left:50px; }
     #team .staff li span { display:none; }
     #team .staff li img { width:100%; }
     #team .social { width:100%; margin:20px auto 0; }
-    #team .social li a { text-indent:-9999px; }
-    #team .social li { margin-right:15px; }
+    #team .social li a { text-indent:-9999px; width:50px; }
+    #team .social li { margin-right:15px; width:30px; }
     #team .social li a.twitter { padding-left:35px; }
     #team .social li a.github { padding-left:34px; padding-top:1px; }
     
