@@ -156,11 +156,17 @@ footer #sitemap ul.right li { margin-left:50px; }
     #clients .items li a > h3 { font-size:20px; margin-bottom:10px; }
     #clients .items li a > p { text-align:center; }
     
-    #about h2, #clients h2, #team .about h2 { font-size:28px; line-height:1.6; }
-    #about p, #clients p, #team .about p { font-size:18px; line-height:1.5; max-width:95%; }
+    #about h2, #clients h2, #team .about h2 { font-size:28px; line-height:1.5; }
+    #about p, #clients p, #team .about p { font-size:18px; line-height:1.6; max-width:95%; color:#899097; }
     #team .about p a { font-size:18px; }
     
-    footer .logo { left:50%; margin-left:-25px; }
+    #contact { padding:50px 0px 30px 0px; }
+    #contact .info { padding:0; width:100%; }
+    #contact .info ul { padding:15px 30px; }
+    #contact .info li { text-align:left; font-size:16px; }
+    #contact .info li span a { font-size:16px; }
+    
+    footer .logo { left:50%; margin-left:-25px; top:-22px; }
     footer #sitemap ul { display:none; }
     
 }
