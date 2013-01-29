@@ -158,7 +158,17 @@ footer #sitemap ul.right li { margin-left:50px; }
     
     #about h2, #clients h2, #team .about h2 { font-size:28px; line-height:1.5; }
     #about p, #clients p, #team .about p { font-size:18px; line-height:1.6; max-width:95%; color:#899097; }
+    
     #team .about p a { font-size:18px; }
+    #team .staff li { width:30%; }
+    #team .staff li h3 { display:none; }
+    #team .staff li span { display:none; }
+    #team .staff li img { width:100%; }
+    #team .social { width:100%; margin:20px auto 0; }
+    #team .social li a { text-indent:-9999px; }
+    #team .social li { margin-right:15px; }
+    #team .social li a.twitter { padding-left:35px; }
+    #team .social li a.github { padding-left:34px; padding-top:1px; }
     
     #contact { padding:50px 0px 30px 0px; }
     #contact .info { padding:0; width:100%; }
