@@ -130,6 +130,7 @@ footer #sitemap ul.right li { margin-left:50px; }
 
 @media only screen and (min-width : 0px) and (max-width : 768px) {
 
+    html, body { overflow-x:hidden; }
     p { font-size: 0.8em; }
     .centered { width:290px; text-align:center; }
     header { padding:0.6em 0 0.6em 0; }
