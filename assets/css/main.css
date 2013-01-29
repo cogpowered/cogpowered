@@ -103,6 +103,7 @@ footer #sitemap ul.right li { margin-left:50px; }
 #contact .info li span { text-align:right; float:right; color:#2F353E; }
 #contact .info li span a { color:#19A9E5; font-weight:100; font-size:18px; }
 #contact .info li span br { margin-bottom:8px; }
+#contact .info .small-tag { display:none; }
 
 /* ANIMATIONS */
 @-webkit-keyframes logo-rotate {
@@ -175,6 +176,8 @@ footer #sitemap ul.right li { margin-left:50px; }
     #contact .info ul { padding:15px 30px; }
     #contact .info li { text-align:left; font-size:16px; }
     #contact .info li span a { font-size:16px; }
+    #contact .info .small-tag { display:block; }
+    #contact .info .large-tag { display:none; }
     
     footer .logo { left:50%; margin-left:-25px; top:-22px; }
     footer #sitemap ul { display:none; }
