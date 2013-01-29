@@ -149,7 +149,7 @@ footer #sitemap ul.right li { margin-left:50px; }
     header #headline h1 { font-size:28px; line-height:1.6; }
     header #headline h2 { font-size:18px; line-height:1.5; margin-top:20px; }
     
-    #clients { padding:7em 0 3em; }
+    #clients { padding:7em 0 2em; }
     #clients .items { margin:30px 0; }
     #clients .items li { width:100%; margin:0; float:none; clear:both; overflow:hidden; margin-bottom:40px; text-align:center; }
     #clients .items li a:hover .hover { opacity:0; }
