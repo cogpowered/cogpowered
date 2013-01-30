@@ -1,7 +1,7 @@
 /* BASE CLASSES */
 .centered { width:1120px; margin:0 auto; }
 
-.left { float:left; } 
+.left { float:left; }
 .right { float:right; }
 
 .clearfix { clear:both; overflow:hidden; }
@@ -19,10 +19,10 @@ section { padding:12em 0; border-top:1px solid #f2f2f2; }
 header { height:825px; background:url('../img/header-bg.png') repeat #2F353E; position:relative; overflow:hidden; }
 header.sub { height:160px; }
 header #logo { background:url('../img/logo.png') no-repeat; width:107px; height:107px; text-indent:-9999px; position:absolute; top:41px; left:507px; }
-header #logo.animation { -webkit-animation-name:logo-rotate; -webkit-animation-duration:15s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name:logo-rotate; -moz-animation-duration:15s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear;} 
+header #logo.animation { -webkit-animation-name:logo-rotate; -webkit-animation-duration:15s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name:logo-rotate; -moz-animation-duration:15s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear;}
 
-header #navigation { list-style:none; position:relative; clear:both; overflow:hidden; height:168px; margin-top:-30px; }
-header #navigation ul { margin-top:50px; }
+header #navigation { list-style:none; position:relative; clear:both; overflow:hidden; height:180px; margin-top:-30px; }
+header #navigation ul { margin-top: 80px; }
 header #navigation ul li { display:inline-block; }
 header #navigation ul li > a { line-height:88px; color:#8E959C; font-weight:300; letter-spacing:0.15em; text-transform:uppercase; }
 header #navigation ul li.active > a { color:#fff; }
@@ -124,7 +124,8 @@ footer #sitemap ul.right li { margin-left:50px; }
   }
 }
 
-#navigation { opacity:0; }
+/*#navigation { opacity:0; }*/
+#navigation .left, #navigation .right, #navigation #logo { opacity: 0; }
 #headline { opacity:0; }
 #browser { opacity:0;}
 
@@ -134,32 +135,32 @@ footer #sitemap ul.right li { margin-left:50px; }
     /* basics */
     html, body { overflow-x:hidden; }
     .centered { min-width:230px; width:auto; padding:0 30px; text-align:center; }
-    
+
     section { padding:6em 0; }
-    
+
     img { width:100%; }
-    
+
     /* header */
     header { padding:0.6em 0 2em 0; height:auto; }
     header .browser { display:none; }
-    
+
     header #navigation ul { display:none; }
     header #logo { left:50%; margin-left:-53px; }
-    
+
     header #headline { margin-top:30px; }
     header #headline h1 { font-size:28px; line-height:1.6; }
     header #headline h2 { font-size:18px; line-height:1.5; margin-top:20px; }
-    
+
     #clients { padding:7em 0 2em; }
     #clients .items { margin:30px 0; }
     #clients .items li { width:100%; margin:0; float:none; clear:both; overflow:hidden; margin-bottom:40px; text-align:center; }
     #clients .items li a:hover .hover { opacity:0; }
     #clients .items li a > h3 { font-size:20px; margin-bottom:10px; }
     #clients .items li a > p { text-align:center; }
-    
+
     #about h2, #clients h2, #team .about h2 { font-size:28px; line-height:1.5; }
     #about p, #clients p, #team .about p { font-size:18px; line-height:1.6; max-width:95%; color:#899097; }
-    
+
     #team .about p a { font-size:18px; }
     #team .staff li { width:30%; }
     #team .staff li h3 { display:none; }
@@ -170,7 +171,7 @@ footer #sitemap ul.right li { margin-left:50px; }
     #team .social li { margin-right:15px; width:30px; }
     #team .social li a.twitter { padding-left:35px; }
     #team .social li a.github { padding-left:34px; padding-top:1px; }
-    
+
     #contact { padding:50px 0px 30px 0px; }
     #contact .info { padding:0; width:100%; }
     #contact .info ul { padding:15px 30px; }
@@ -178,8 +179,8 @@ footer #sitemap ul.right li { margin-left:50px; }
     #contact .info li span a { font-size:16px; }
     #contact .info .small-tag { display:block; }
     #contact .info .large-tag { display:none; }
-    
+
     footer .logo { left:50%; margin-left:-25px; top:-22px; }
     footer #sitemap ul { display:none; }
-    
+
 }

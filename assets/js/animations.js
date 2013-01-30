@@ -1,18 +1,21 @@
 
 $(document).ready(function() {
-    
-    /* **** some super fancy animations? **** */
-    $('header #navigation').delay(400).animate({
-         'opacity' : '1',
-         'margin-top' : '+=30px'
+
+    $('header #navigation #logo').delay(400).animate({
+        'opacity': '1',
+        'margin-top': '+=30px'
     }, { duration: 700, easing: 'swing' });
-	
-	$('#headline').delay(1100).animate({
+
+    $('header #navigation .left, header #navigation .right').delay(1100).animate({
+        'opacity': '1'
+    }, { duration: 700, easing: 'swing' });
+
+    $('#headline').delay(1100).animate({
          'opacity' : '1'
-    }, { duration: 600, easing: 'swing' });
-    
+    }, { duration: 700, easing: 'swing' });
+
     $('#browser').delay(1100).animate({
          'opacity' : '1'
-    }, { duration: 600, easing: 'swing' });
-    
+    }, { duration: 700, easing: 'swing' });
+
 });
