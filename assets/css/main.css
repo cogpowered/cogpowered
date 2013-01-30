@@ -21,8 +21,8 @@ header.sub { height:160px; }
 header #logo { background:url('../img/logo.png') no-repeat; width:107px; height:107px; text-indent:-9999px; position:absolute; top:41px; left:507px; }
 header #logo.animation { -webkit-animation-name:logo-rotate; -webkit-animation-duration:15s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name:logo-rotate; -moz-animation-duration:15s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear;}
 
-header #navigation { list-style:none; position:relative; clear:both; overflow:hidden; height:180px; margin-top:-30px; }
-header #navigation ul { margin-top: 80px; }
+header #navigation { list-style:none; position:relative; clear:both; overflow:hidden; height:168px; margin-top:-30px; }
+header #navigation ul { margin-top:50px; }
 header #navigation ul li { display:inline-block; }
 header #navigation ul li > a { line-height:88px; color:#8E959C; font-weight:300; letter-spacing:0.15em; text-transform:uppercase; }
 header #navigation ul li.active > a { color:#fff; }
@@ -124,8 +124,7 @@ footer #sitemap ul.right li { margin-left:50px; }
   }
 }
 
-/*#navigation { opacity:0; }*/
-#navigation .left, #navigation .right, #navigation #logo { opacity: 0; }
+#navigation { opacity:0; }
 #headline { opacity:0; }
 #browser { opacity:0;}
 
