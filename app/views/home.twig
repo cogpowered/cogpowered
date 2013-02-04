@@ -1,210 +1,159 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>CogPowered.com - Beautiful designs resting on solid foundations.</title>
+{% extends "layout/main" %}
 
-    {{ basset_show('application.css') }}
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800">
+{% block body %}
+<header>
+    <div class="centered">
+        <nav id="navigation">
+            <ul class="left">
+                <li class="active link"><a href="#">What we do</a></li>
+                <li class="link"><a href="#">Our clients</a></li>
+                <li class="link"><a href="#">The team</a></li>
+            </ul>
+            <div id="logo" class="animation"></div>
+            <ul class="right">
+                <li class="link"><a href="#">Contact us</a></li>
+                <li><a href="http://cogpowered.com/blog">The blog</a></li>
+                <li><a href="http://bigblast.co" target="_blank">Our projects</a></li>
+            </ul>
+        </nav>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-    {{ basset_show('application.js') }}
-    <script type="text/javascript" src="//use.typekit.net/qek1zlw.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-            // initiate page scroller plugin
-            $('body').pageScroller({
-                navigation: '#navigation .link',
-                sectionClass: 'section'
-            });
-
-        });
-    </script>
-</head>
-<body>
-
-    <header>
-        <div class="centered">
-            <nav id="navigation">
-                <ul class="left">
-                    <li class="active link"><a href="#">What we do</a></li>
-                    <li class="link"><a href="#">Our clients</a></li>
-                    <li class="link"><a href="#">The team</a></li>
-                </ul>
-                <div id="logo" class="animation"></div>
-                <ul class="right">
-                    <li class="link"><a href="#">Contact us</a></li>
-                    <li><a href="http://cogpowered.com/blog">The blog</a></li>
-                    <li><a href="http://bigblast.co" target="_blank">Our projects</a></li>
-                </ul>
-            </nav>
-
-            <div id="headline">
-                <h1>Beautiful designs resting on solid foundations.</h1>
-                <h2>We're taking on new clients. Get in touch with us about your project.</h2>
-            </div>
-
-            <div id="browser" class="browser"></div>
-            <div id="shadow"></div>
+        <div id="headline">
+            <h1>Beautiful designs resting on solid foundations.</h1>
+            <h2>We're taking on new clients. Get in touch with us about your project.</h2>
         </div>
-    </header>
 
-    <section id="about" class="clearfix section">
-        <div class="centered">
-            <h2>We build <em>responsive</em> sites for the web and mobile</h2>
-            <p>We create beautiful user experiences for all devices. We handle everything from planning, design and development to final execution and launch.</p>
+        <div id="browser" class="browser"></div>
+        <div id="shadow"></div>
+    </div>
+</header>
 
-            <div class="devices">
-                <img src="assets/img/devices.png" />
-            </div>
+<section id="about" class="clearfix section">
+    <div class="centered">
+        <h2>We build <em>responsive</em> sites for the web and mobile</h2>
+        <p>We create beautiful user experiences for all devices. We handle everything from planning, design and development to final execution and launch.</p>
+
+        <div class="devices">
+            <img src="assets/img/devices.png" />
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="clients" class="clearfix section">
-        <div class="centered">
-            <h2>We've worked with a <em>great bunch</em> of awesome clients</h2>
-            <p>We've worked with companies big and small on projects that span from single page designs to fully scalable web applications. Check out some of our clients.</p>
+<section id="clients" class="clearfix section">
+    <div class="centered">
+        <h2>We've worked with a <em>great bunch</em> of awesome clients</h2>
+        <p>We've worked with companies big and small on projects that span from single page designs to fully scalable web applications. Check out some of our clients.</p>
 
-            <ul class="items clearfix">
-                <li class="top">
-                    <a href="http://chelseamagazines.com">
-                        <img src="assets/img/clients/chelsea.png" title="Chelsea Magazines" />
-                        <h3>Chelsea Magazines</h3>
-                        <p>Online platform for magazine distribution.</p>
-                        <div class="hover">
-                            <span>View live site</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="top">
-                    <a href="http://artistsandillustrators.co.uk">
-                        <img src="assets/img/clients/artists.png" title="Artists &amp; Illustrators" />
-                        <h3>Artists and Illustrators</h3>
-                        <p>An online marketplace for art enthusiasts.</p>
-                        <div class="hover">
-                            <span>View live site</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="top">
-                    <a href="#" class="inactive">
-                        <img src="assets/img/clients/egl.png" title="European Gaming League" />
-                        <h3>European Gaming League</h3>
-                        <p>Europes largest tourmnament organisers.</p>
-                        <div class="hover inactive">
-                            <span>In development</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="inactive">
-                        <img src="assets/img/clients/leadsmob.png" title="LeadsMob" />
-                        <h3>LeadsMob</h3>
-                        <p>An all-in-one social marketing platform.</p>
-                        <div class="hover inactive">
-                            <span>In development</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://gamesdai.ly">
-                        <img src="assets/img/clients/gamesdaily.png" title="GamesDaily" />
-                        <h3>GamesDaily</h3>
-                        <p>Your custom gaming feed for latest news.</p>
-                        <div class="hover">
-                            <span>View live site</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://creativemarket.com/cogpowered">
-                        <img src="assets/img/clients/creative.png" title="Creative Market" />
-                        <h3>Creative Market</h3>
-                        <p>We sell templates over at CreativeMarket.</p>
-                        <div class="hover">
-                            <span>View our themes</span>
-                        </div>
-                    </a>
-                </li>
+        <ul class="items clearfix">
+            <li class="top">
+                <a href="http://chelseamagazines.com">
+                    <img src="assets/img/clients/chelsea.png" title="Chelsea Magazines" />
+                    <h3>Chelsea Magazines</h3>
+                    <p>Online platform for magazine distribution.</p>
+                    <div class="hover">
+                        <span>View live site</span>
+                    </div>
+                </a>
+            </li>
+            <li class="top">
+                <a href="http://artistsandillustrators.co.uk">
+                    <img src="assets/img/clients/artists.png" title="Artists &amp; Illustrators" />
+                    <h3>Artists and Illustrators</h3>
+                    <p>An online marketplace for art enthusiasts.</p>
+                    <div class="hover">
+                        <span>View live site</span>
+                    </div>
+                </a>
+            </li>
+            <li class="top">
+                <a href="#" class="inactive">
+                    <img src="assets/img/clients/egl.png" title="European Gaming League" />
+                    <h3>European Gaming League</h3>
+                    <p>Europes largest tourmnament organisers.</p>
+                    <div class="hover inactive">
+                        <span>In development</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="inactive">
+                    <img src="assets/img/clients/leadsmob.png" title="LeadsMob" />
+                    <h3>LeadsMob</h3>
+                    <p>An all-in-one social marketing platform.</p>
+                    <div class="hover inactive">
+                        <span>In development</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://gamesdai.ly">
+                    <img src="assets/img/clients/gamesdaily.png" title="GamesDaily" />
+                    <h3>GamesDaily</h3>
+                    <p>Your custom gaming feed for latest news.</p>
+                    <div class="hover">
+                        <span>View live site</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://creativemarket.com/cogpowered">
+                    <img src="assets/img/clients/creative.png" title="Creative Market" />
+                    <h3>Creative Market</h3>
+                    <p>We sell templates over at CreativeMarket.</p>
+                    <div class="hover">
+                        <span>View our themes</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="team" class="clearfix section">
+    <div class="centered">
+        <div class="about">
+            <h2>We're an <em>enthusiastic bunch</em> who love what we do</h2>
+            <p>We're a small team of designers and developers building for the web. We love creating our <a href="http://bigblast.co" target="_blank">own projects</a> and working with interesting clients. Get in touch.</p>
+            <ul class="social">
+                <li><a class="github" href="http://github.com/cogpowered/" target="_blank">View our code on Github</a></li>
+                <li class="nomargin"><a class="twitter" href="http://twitter.com/cogpowered" target="_blank">Follow us on twitter</a></li>
             </ul>
         </div>
-    </section>
 
-    <section id="team" class="clearfix section">
-        <div class="centered">
-            <div class="about">
-                <h2>We're an <em>enthusiastic bunch</em> who love what we do</h2>
-                <p>We're a small team of designers and developers building for the web. We love creating our <a href="http://bigblast.co" target="_blank">own projects</a> and working with interesting clients. Get in touch.</p>
-                <ul class="social">
-                    <li><a class="github" href="http://github.com/cogpowered/" target="_blank">View our code on Github</a></li>
-                    <li class="nomargin"><a class="twitter" href="http://twitter.com/cogpowered" target="_blank">Follow us on twitter</a></li>
-                </ul>
-            </div>
+        <ul class="staff clearfix">
+            <li>
+                <a href="http://twitter.com/mattgaunt" target="_blank">
+                    <img src="assets/img/avatars/mattgaunt.png" class="avatar" />
+                    <h3>Matthew Gaunt</h3>
+                    <span>Founder / Developer</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/tomasbryan" target="_blank">
+                    <img src="assets/img/avatars/tomasbryan.png" class="avatar" />
+                    <h3>Thomas Bryan</h3>
+                    <span>Founder / Designer</span>
+                </a>
+            </li>
+            <li class="nomargin">
+                <a href="http://twitter.com/vivalacrowe" target="_blank">
+                   <img src="assets/img/avatars/robertcrowe.jpg" class="avatar" />
+                   <h3>Robert Crowe</h3>
+                   <span>Founder / Developer</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
 
-            <ul class="staff clearfix">
-                <li>
-                    <a href="http://twitter.com/mattgaunt" target="_blank">
-                        <img src="assets/img/avatars/mattgaunt.png" class="avatar" />
-                        <h3>Matthew Gaunt</h3>
-                        <span>Founder / Developer</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://twitter.com/tomasbryan" target="_blank">
-                        <img src="assets/img/avatars/tomasbryan.png" class="avatar" />
-                        <h3>Thomas Bryan</h3>
-                        <span>Founder / Designer</span>
-                    </a>
-                </li>
-                <li class="nomargin">
-                    <a href="http://twitter.com/vivalacrowe" target="_blank">
-                       <img src="assets/img/avatars/robertcrowe.jpg" class="avatar" />
-                       <h3>Robert Crowe</h3>
-                       <span>Founder / Developer</span>
-                    </a>
-                </li>
+<section id="contact" class="section">
+    <div class="centered">
+        <div class="info">
+            <ul>
+                <li>Address <span class="address">20 Sefton Avenue<br/>NG9 8EA<br/>United Kingdom</span></li>
+                <li>Phone <span>+44 7427 164884</span></li>
+                <li class="last">Email <span class="large-tag"><a href="mailto:contact@cogpowered.com">contact@cogpowered.com</a></span> <span class="small-tag"><a href="mailto:contact@cogpowered.com">contact@cogpow...</a></span></li>
             </ul>
         </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="centered">
-            <div class="info">
-                <ul>
-                    <li>Address <span class="address">20 Sefton Avenue<br/>NG9 8EA<br/>United Kingdom</span></li>
-                    <li>Phone <span>+44 7427 164884</span></li>
-                    <li class="last">Email <span class="large-tag"><a href="mailto:contact@cogpowered.com">contact@cogpowered.com</a></span> <span class="small-tag"><a href="mailto:contact@cogpowered.com">contact@cogpow...</a></span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="centered">
-            <nav id="sitemap">
-                <ul class="left">
-                    <li class="link"><a href="#about">What we do</a></li>
-                    <li class="link"><a href="#clients">Our clients</a></li>
-                    <li class="link"><a href="#team">The team</a></li>
-                </ul>
-                <div class="logo"></div>
-                <ul class="right">
-                    <li class="link"><a href="#contact">Contact us</a></li>
-                    <li><a href="http://cogpowered.com/blog">The Blog</a></li>
-                    <li><a href="http://bigblast.co" target="_blank">Our projects</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-</body>
-</html>
+    </div>
+</section>
+{% endblock %}
