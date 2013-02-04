@@ -1,3 +1,6 @@
-_site/*
-assets/css/main-min.css
-assets/css/reset-min.css
+/vendor
+composer.phar
+composer.lock
+.DS_Store
+/public/assets/production/*.css
+/public/assets/production/*.js
