@@ -1,0 +1,42 @@
+/* BASE CLASSES */
+.centered { width:980px; margin:0 auto; }
+
+.left { float:left; }
+.right { float:right; }
+
+a { font-size:12px; font-family:'Open Sans',Arial,sans-serif; }
+
+h2, h3 { font-family:'Open Sans',Arial,sans-serif; }
+
+/* CORE STYLES */
+body { background:url('../img/header-bg.png') repeat #2F353E; margin:0; padding:0; }
+
+#logo { background:url('../img/logo-big.png') no-repeat; width:125px; height:125px; text-indent:-9999px; position:absolute; top:0%; left:50%; margin-left:-64px;}
+#logo.animation { -webkit-animation-name:logo-rotate; -webkit-animation-duration:15s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name:logo-rotate; -moz-animation-duration:15s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear;}
+
+#content { position:absolute; width:350px; height:350px; left:50%; top:50%; margin-left:-175px; margin-top:-175px; padding-top:150px;  }
+#content h1 { font:600 24px/34px 'Open Sans', Helvetica, Arial, sans-serif; text-align:center; color:#fff; }
+#content h1 span { font-weight:300; font-size:18px; }
+
+#content .social { text-align:center; margin-top:40px; }
+#content .social .twitter { display:block; background:url('../img/twitter.png') no-repeat; text-indent:-9999px; height:15px; width:22px; margin:0 auto; }
+#content .social .twitter:hover { background-position:0 -15px; }
+
+/* ANIMATIONS */
+@-webkit-keyframes logo-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes logo-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}

@@ -108,6 +108,7 @@ return array(
 		'application' => function($collection)
 		{
 			// CSS
+
 			$collection->add('reset.css');
 			$collection->add('main.css');
 
@@ -115,6 +116,12 @@ return array(
 			$collection->add('jquery.easing.js');
 			$collection->add('animations.js');
 			$collection->add('jquery.pagescroller.js');
+		},
+
+		'holding' => function($collection)
+		{
+			// CSS
+			$collection->add('holding.css');
 		}
 	),
 

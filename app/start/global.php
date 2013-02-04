@@ -2,24 +2,6 @@
 
 /*
 |--------------------------------------------------------------------------
-| Register The Laravel Class Loader
-|--------------------------------------------------------------------------
-|
-| In addition to using Composer, you may use the Laravel class loader to
-| load your controllers and models. This is useful for keeping all of
-| your classes in the "global" namespace without Composer updating.
-|
-*/
-
-ClassLoader::addDirectories(array(
-
-	app_path().'/controllers',
-	app_path().'/models',
-
-));
-
-/*
-|--------------------------------------------------------------------------
 | Application Error Logger
 |--------------------------------------------------------------------------
 |
@@ -47,6 +29,11 @@ Log::useDailyFiles(__DIR__.'/../storage/logs/log.txt');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
+});
+
+App::missing(function($exception)
+{
+    return View::make('errors/404');
 });
 
 /*
