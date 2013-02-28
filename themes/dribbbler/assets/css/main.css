@@ -210,13 +210,13 @@ a {
 	display:inline-block;
 	margin:0 15px;
 	background-image:url('../img/icons/sprite.png');
-	opacity: .7;
+	opacity: .4;
 	   
-	-webkit-transition: opacity .7s;
-	-moz-transition: opacity .7s;
-	-ms-transition: opacity .7s;
-	-o-transition: opacity .7s;
-	transition: opacity .7s;
+	-webkit-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+	-o-transition: opacity .4s;
+	transition: opacity .4s;
 }
 
 #about #networks .links > li:hover {
@@ -234,9 +234,9 @@ a {
 #about #networks.dribbble { background-color:#D5335D; }
 #about #networks.twitter { background-color:#2094CA; }
 #about #networks.github { background-color:#4A535B; }
-#about #networks.zerply { }
+#about #networks.zerply { background-color:#9DBC7A; }
 #about #networks.skype { background-color:#47AED9; }
-#about #networks.email { background-color:#89AEC6; }
+#about #networks.email { background-color:#758087; }
 
 #about #networks .links > li.dribbble { background-position:0 0; }
 #about #networks .links > li.twitter { background-position:0 -36px; }
