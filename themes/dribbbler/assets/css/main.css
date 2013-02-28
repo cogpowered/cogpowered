@@ -100,12 +100,14 @@ a {
 
 #portfolio .inset {
 	position:absolute;
+	top:0;
 	z-index:999;
 	width:100%;
 	height:100%;
 	-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
 	-moz-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
 	box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+	pointer-events:none;
 }
 
 /* about me */
