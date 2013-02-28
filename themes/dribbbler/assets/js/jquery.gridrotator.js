@@ -256,7 +256,7 @@
 				for( var j = 0; j < this.columns; ++j ) {
 
 					var $item	= this.$items.eq( this.columns * i + j ),
-						h		= itemWidth,
+						h		= Math.floor(itemWidth * 0.75),
 						w		= ( j < Math.floor( gapWidth ) ) ? itemWidth + 1 : itemWidth;
 
 					$item.css( {

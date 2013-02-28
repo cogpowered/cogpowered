@@ -1,104 +1,252 @@
 body {
-	background: #FFF;
-	font: 12px/14px Arial, Helvetica, sans-serif; 
-	color: #6a6663;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-	font-smooth: always;
-	overflow-x:hidden;
-	overflow-y:scroll;
+	font-family:Open Sans,Arial,Helvetica,sans-serif;
+	background:#F5F6F7;
 }
 
 a {
-    color:#339FD6;
-    text-decoration:none; 
+	color:#48535A;
+	text-decoration:none;
+	font-weight:bold;
+	-webkit-transition: color .35s, background .35s, opacity .35s; 
+	-moz-transition: color .35s, background .35s, opacity .35s; 
+	-ms-transition: color .35s, background .35s, opacity .35s; 
+	-o-transition: color .35s, background .35s, opacity .35s; 
+	transition: color .35s, background .35s, opacity .35s;
 }
-
-p {
-    font:300 14px/30px 'Open Sans',Helvetica,Arial,sans-serif;
-    color: #6A6663;
-    padding-bottom: 6px;
-}
-
-h1, h2 {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif; 
-}
-
-strong { font-weight:bold; }
-
-/* VAR */
-
-.left { float: left; }
-.right { float: right; }
-
-.border-radius {
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
-}
-
-/* STYLES
------------------------------------------------------------------*/
 
 .wrap {
-	width: 100%;
-	overflow: hidden;
+	max-width:1120px;
+	margin:0 auto;
 }
 
-.content {
-	width: 1020px;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
+.clear {
+	clear:both;
+	overflow:hidden;
 }
 
-
-/* Header --------------------------- */
-
-header {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	/*overflow: hidden;*/
-	position: relative;
+/* header area */
+#header #top {
+	padding:3rem 0;
 }
 
-.avatar {
-	margin-top:70px;
-	text-align:center;
+#header #top .logo {
+	float:left;
+	text-transform:uppercase;
 }
-	
-	.avatar > a {
-		display: block;
-	}
-	
-	.avatar > a > img  {
-		width:120px;
-	}
-	
-.about {
-	margin:20px 0 35px;
+
+#header #top .hire-me {
+	float:right;
+	color:#48535A;
+}
+
+#header #top .hire-me > a {
+	color:#5BABE2;
+	text-decoration:underline;
+	font-weight:700;
+}
+
+#header #about {
+	padding:7rem 0;
 	text-align:center;
 }
 
-	.about > h1 {
-		font: 300 28px/56px 'Open Sans', Helvetica, Arial, sans-serif;
-		color:#4B4F53;
-	}
-
-/* Footer --------------------------- */
-
-footer {
-	width: 100%;
-	padding: 30px 0;
-	overflow: hidden;
-	color: #8c8b87;
-	font-weight: 300;
+#header #about > p {
+	font-size:40px;
+	font-weight:300;
+	line-height:1.8em;
+	color:#48535A;
+	max-width:960px;
+	margin:0 auto;
 }
 
+#header #about > p > a {
+	color:#48535A;
+}
 
-/* Portfolio grid ------------------- */
+#header #about > p > a:hover {
+	color:#5BABE2;
+}
 
+/* footer */
+#footer {
+	padding:2rem 0;
+	border-top:1px solid #EEEEEE;
+	font-size:14px;
+	color:#758087;
+}
+
+#footer .copyright {
+	float:left;
+}
+
+#footer .phone {
+	float:right;
+	margin-left:3rem;
+}
+
+#footer .address {
+	float:right;
+}
+
+#footer p > span {
+	font-weight:bold;
+	color:#48535A;
+}
+
+/* dribbble shots block */
 #portfolio {
-
+	position:relative;
 }
+
+#portfolio .inset {
+	position:absolute;
+	z-index:999;
+	width:100%;
+	height:100%;
+	-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* about me */
+#about {
+	padding:8rem 0 0;
+}
+
+#about #location {
+	text-align:center;
+	margin-bottom:9rem;
+}
+
+#about #location h2 {
+	font-size:34px;
+	font-weight:100;
+	color:#48535A;
+	margin-bottom:5rem;
+}
+
+#about #location h2 > strong {
+	font-weight:bold;
+}
+
+#about #location .map {
+	background:url('../img/map.png') no-repeat center center;
+	background-size:100%;
+	width:620px;
+	height:418px;
+	margin:0 auto;
+	position:relative;
+}
+
+#about #location .map-pin {
+    display: block;
+    height: 92px;
+    position: absolute;
+    right: 75px;
+    top: 245px;
+    width: 92px;
+}
+#about #location .map-pin .back {
+    background: url("http://648290826.r.cdn77.net/wp-content/themes/dev7studiosv7/img/map-pin.png") no-repeat scroll 0 100% transparent;
+    height: 92px;
+    opacity: 0.7;
+    width: 92px;
+	-webkit-animation:pulsate 2s ease-out;-webkit-animation-iteration-count:infinite;-moz-animation:pulsate 2s ease-out;-moz-animation-iteration-count:infinite;
+}
+#about #location .map-pin .pin {
+    background: url("http://648290826.r.cdn77.net/wp-content/themes/dev7studiosv7/img/map-pin.png") no-repeat scroll -20px 0 transparent;
+    display: block;
+    height: 53px;
+    position: absolute;
+    right: 19px;
+    top: 20px;
+    width: 53px;
+}
+
+#about .bio {
+	max-width:800px;
+	margin:0 auto;
+	margin-top:4rem;
+}
+
+#about .bio > p {
+	font-size:20px;
+	font-weight:100;
+	line-height:36px;
+	color:#758087;
+}
+
+#about #networks {
+	padding:5rem 0;
+	text-align:center;
+	background:rgba(0,0,0,0.025);
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	-ms-transition: background .5s;
+	-o-transition: background .5s;
+	transition: background .5s;
+}
+
+#about #networks.active p {
+	color:#fff;
+}
+
+#about #networks p {
+	font-weight:100;
+	font-size:20px;
+	margin-top:3rem;
+	color:#48535A;
+}
+
+#about #networks p > span {
+	font-weight:bold;
+}
+
+#about #networks .links {
+	list-style:none;
+}
+
+#about #networks .links > li {
+	display:inline-block;
+	margin:0 15px;
+	background-image:url('../img/icons/sprite.png');
+	opacity: .7;
+	   
+	-webkit-transition: opacity .7s;
+	-moz-transition: opacity .7s;
+	-ms-transition: opacity .7s;
+	-o-transition: opacity .7s;
+	transition: opacity .7s;
+}
+
+#about #networks .links > li:hover {
+	opacity: 1;
+}
+
+#about #networks .links > li > a {
+	display:block;
+	text-indent:-9999px;
+	width:36px;
+	height:36px;
+}
+
+/* social icon stuff */
+#about #networks.dribbble { background-color:#D5335D; }
+#about #networks.twitter { background-color:#2094CA; }
+#about #networks.github { background-color:#4A535B; }
+#about #networks.zerply { }
+#about #networks.skype { background-color:#47AED9; }
+#about #networks.email { background-color:#89AEC6; }
+
+#about #networks .links > li.dribbble { background-position:0 0; }
+#about #networks .links > li.twitter { background-position:0 -36px; }
+#about #networks .links > li.github { background-position:0 -72px; }
+#about #networks .links > li.zerply { background-position:0 -108px; }
+#about #networks .links > li.skype { background-position:0 -144px; }
+#about #networks .links > li.email { background-position:0 -180px; }
+#about #networks .links > li.dribbble:hover { background-position:-36px 0; }
+#about #networks .links > li.twitter:hover { background-position:-36px -36px; }
+#about #networks .links > li.github:hover { background-position:-36px -72px; }
+#about #networks .links > li.zerply:hover { background-position:-36px -108px; }
+#about #networks .links > li.skype:hover { background-position:-36px -144px; }
+#about #networks .links > li.email:hover { background-position:-36px -180px; }
