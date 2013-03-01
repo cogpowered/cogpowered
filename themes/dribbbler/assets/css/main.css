@@ -148,7 +148,7 @@ a {
 #about #location .map-pin {
     position: absolute;
     right: 90px;
-    top: 250px;
+    top: 252px;
 }
 
 #about .bio {
@@ -288,9 +288,9 @@ a {
 	vertical-align: middle;
 	text-indent: -9000px;
 
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	border-radius:30px;
 
 	-webkit-transition-property:top, bottom, left, right, opacity, border-width;
 	-webkit-animation-duration:2s;
