@@ -8,6 +8,6 @@ $(function(){
 			$('#portfolio ul').append('<li><a href="' + shot.url + '"><img src="' + shot.image_url + '" /></a></li>');
 		});
 	  
-	}, {page: 1, per_page: 21, cache: 0});
+	}, {page: 1, per_page: 21, cache: 600});
 		
 });

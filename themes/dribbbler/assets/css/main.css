@@ -217,9 +217,8 @@ a {
 	height: 36px;
 }
 
-
 /* social icon stuff */
-#about #networks.dribbble { background-color:#D5335D; }
+#about #networks.dribbble { background-color:#ed6297; }
 #about #networks.twitter { background-color:#2094CA; }
 #about #networks.github { background-color:#4A535B; }
 #about #networks.zerply { background-color:#9DBC7A; }
@@ -238,7 +237,6 @@ a {
 #about #networks .links > li.zerply:hover { background-position:-36px -108px; }
 #about #networks .links > li.skype:hover { background-position:-36px -144px; }
 #about #networks .links > li.email:hover { background-position:-36px -180px; }
-
 
 /* map marker animations */
 @-webkit-keyframes pulse{
