@@ -31,11 +31,16 @@ a {
 
 #header #top .logo {
 	float:left;
-	text-transform:uppercase;
+	text-indent:-9999px;
+	background:url('../img/logo.png') no-repeat;
+	width:160px;
+	height:31px;
+	display:block;
 }
 
 #header #top .hire-me {
 	float:right;
+	margin-top:8px;
 	color:#48535A;
 }
 
