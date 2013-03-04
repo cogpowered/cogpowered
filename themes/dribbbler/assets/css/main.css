@@ -24,7 +24,11 @@ a {
 	overflow: hidden;
 }
 
-/* header area */
+/* header */
+#header { 
+	padding:0 2rem;
+}
+
 #header #top {
 	padding: 3rem 0;
 }
@@ -50,12 +54,12 @@ a {
 	font-weight: 700;
 }
 
-#header #about {
+#header #intro {
 	padding: 7rem 0;
 	text-align: center;
 }
 
-#header #about > p {
+#header #intro > p {
 	font-size: 40px;
 	font-weight: 300;
 	line-height: 1.8em;
@@ -64,11 +68,11 @@ a {
 	margin: 0 auto;
 }
 
-#header #about > p > a {
+#header #intro > p > a {
 	color: #48535A;
 }
 
-#header #about > p > a:hover {
+#header #intro > p > a:hover {
 	color: #5BABE2;
 }
 
@@ -122,6 +126,7 @@ a {
 
 #about #location {
 	text-align: center;
+	padding:0 2rem;
 	margin-bottom: 9rem;
 }
 
@@ -143,6 +148,14 @@ a {
 	height: 418px;
 	margin: 0 auto;
 	position: relative;
+}
+
+#about #location .map-fallback {
+	display:none;
+}
+
+#about #location .map-fallback > img {
+	width:100%;
 }
 
 #about #location .map-pin {
@@ -323,4 +336,113 @@ a {
 	background: #47AED9;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	
+}
+   
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 0px) and (max-width : 768px) {
+	#header #top {
+		padding:3rem 0 1rem;
+	}
+	
+	#header #top .logo {
+		float:none; margin:0 auto;
+	}
+	
+	#header #top .hire-me {
+		display:none;
+	}
+	
+	#header #intro { 
+		padding:2rem 0;
+	}
+	
+	#header #intro > p {
+		font-size:20px;
+	}
+	
+	#about {
+		padding:3rem 0 0;
+	}
+	
+	#about .bio {
+		margin:2rem auto 0;
+	}
+	
+	#about .bio > p {
+		font-size:16px;
+		line-height:32px;
+	}
+	
+	#about #location {
+		padding:0 2rem;
+		margin-bottom:4rem;
+	}
+	
+	#about #location h2 {
+		font-size:20px;
+		line-height:1.8em;
+		margin-bottom:2rem;
+	}
+	
+	#about #location .map {
+		display:none;
+	}
+	
+	#about #location .map-fallback {
+		display:block;
+	}
+	
+	#about #location .map-pin {
+		display:none;
+	}
+	
+	#about #networks {
+		padding:3rem 2rem;
+	}
+	
+	#about #networks .links > li {
+		margin:0 10px;
+		margin-bottom:2rem;
+	}
+	
+	#about #networks p {
+		font-size:18px;
+		line-height:32px;
+		margin-top:0;
+	}
+	
+	#footer {
+		padding:2rem;
+		line-height:32px;
+		text-align:center;
+		font-size:14px;
+	}
+	
+	#footer .copyright,
+	#footer .phone,
+	#footer .address {
+		float:none;
+		margin:0;
+	}
+}
+   
+/* iPhone5 Landscape-----*/
+@media only screen and (min-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+ 
+}
+   
+/* Pre iPhone-5 (Height)------*/
+@media only screen and (max-device-height : 480px) {
+	
 }
