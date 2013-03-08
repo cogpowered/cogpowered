@@ -7,8 +7,6 @@
 	<meta name="copyright" content="Copyright (c) Dribbbler 2012.">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
-	<link rel="shortcut icon" type="image/x-icon" href="http://lukesbeard.com/favicon.ico">
-
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/grid.css">
@@ -16,12 +14,15 @@
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.gridrotator.js"></script>
 	<script type="text/javascript" src="assets/js/balller.js"></script>
 	
-	<script type="text/javascript" src="assets/js/shots.js"></script>
+	<script type="text/javascript" src="assets/js/site.js"></script>
 </head>
 <body>
 
+	<!-- Loader icon -->
 	<img src="assets/img/icons/loading.gif" style="display:none;"/>
 	
     <!-- Header -->
@@ -32,7 +33,7 @@
 				<p class="hire-me">
 					I'm available for freelance work 
 					<a href="#">Hire me</a>
-				</nav>
+				</p>
 			</div>
 		</header>
 		<div id="intro">
@@ -103,8 +104,7 @@
 		</div>
 	</footer>
 	
-    <script type="text/javascript" src="assets/js/jquery.transit.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.gridrotator.js"></script>
+	<!-- Load the dribbble grid -->
 	<script type="text/javascript">	
 		$(window).load(function(){
 			$(function() {
@@ -123,19 +123,6 @@
 				} );
 			});
 		});
-	</script>
-	
-	<script type="text/javascript">
-		$(".service").hover(
-			function() {
-				$("#networks").addClass($(this).data("network")).addClass("active");
-				$("#networks p").html($(this).data("tip"));
-			},
-			function() {
-				$("#networks").removeClass();
-				$("#networks p").html("You can find me all over the web");
-			}
-		);
 	</script>
 	
 </body>
