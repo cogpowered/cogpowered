@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Toolbox - A free admin theme</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Dribbbler - A portfolio theme"> 
+	<meta name="copyright" content="Copyright (c) Dribbbler 2012.">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/scripts.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap/tooltip.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap/modal.js"></script>
+</head>
+<body>
+	
+	<div id="utility">
+		<div id="icon">Toolbox</div>
+		<nav id="nav">
+			<a href="#">Dashboard</a>
+			<a href="#">Editorial</a>
+			<a href="#" class="active">Extensions</a>
+			<a href="#">Users</a>
+			<a href="#">Pages</a>
+		</nav>
+		
+		<div id="user">
+			<a href="#">Account settings</a>
+			<span>&middot;</span>
+			<a href="#">Sign out</a>
+		</div>
+	</div>
+	
+	<div id="body">
+		<header id="header" class="clear">
+			<h1>Edit <span class="crumb">&middot;</span> A look at website structure</h1>
+			<div class="actions">
+				<a href="#" data-toggle="modal" data-target="#filters" title="Filter results" class="button action border filter left tip">Filters</a>
+				<a href="#" class="button orange border icon left"><span class="upload tag"></span>Upload</a>
+			</div>
+		</header>
+		
+		<div id="content" class="clear">
+			<div class="form">
+				<div class="row clear">
+					<label>Article title:</label>
+					<input type="text" value="" class="field" />
+				</div>
+				<div class="row clear">
+					<label>Content:</label>
+					<textarea value="" class="field editor"></textarea>
+				</div>
+				<div class="row"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Filters modal -->
+	<div id="filters" class="modal fade hide">
+		<div class="header">Filter results</div>
+		<div class="body">
+			Some content here for filtering out database results.
+		</div>
+		<div class="footer"></div>
+	</div>
+
+	<script type="text/javascript">
+		$('.tip').tooltip({'placement':'left'});
+	</script>
+	
+</body>
+</html>
