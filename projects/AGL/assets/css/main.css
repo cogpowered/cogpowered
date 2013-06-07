@@ -5,3 +5,11 @@ body {
 	padding:0;
 	height: 2750px;
 }
+
+body.article {
+	background: url('../img/article.png') no-repeat center top #fff;
+}
+
+body.forums {
+	background: url('../img/forums.png') no-repeat center top #fff;
+}
