@@ -1,0 +1,79 @@
+body { background: #F3F4F4; color: #2C3032; }
+
+#page-wrapper { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+h2 { font: 16px/26px "Lato", sans-serif; font-weight: bold; text-transform: uppercase; color: #808A91; margin-bottom: 2em; }
+h3 { font-size: 24px; }
+
+a:hover { color: #C75C4A; }
+
+.page { background-color: #FFF; padding: 4.5em 5em; box-shadow: 0 1px 3px rgba(0,0,0,.075); }
+.page .section { margin-bottom: 3em; clear: both; overflow: hidden; }
+.page .section .row { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #EEE; }
+.page .section .row:last-child { border: none; padding-bottom: 0; }
+
+/* Header */
+header {
+	margin-bottom: 3em;
+}
+
+header h1 {
+	font: 42px/46px "Georgia", "Times New Roman", serif;
+	font-weight: bold;
+	color: #C75C4A;
+	letter-spacing: -2px;
+}
+
+header .contact-info {
+	color: #808A91;
+}
+
+header .contact-info span {
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+header .contact-info a {
+	color: #808A91;
+}
+
+/* Sections */
+.about-me {
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 2em !important;
+}
+
+.skills .bullets {
+	list-style: bullets;
+}
+
+.skills .bullets li {
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+.experience .meta, .education .meta {
+	margin-bottom: 10px;
+}
+
+.experience .role, .education .role {
+	display: block;
+}
+
+.experience .date, .education .date {
+	color: #808A91;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.experience .site-link {
+	display: block;
+	color: #C75C4A;
+	margin: 0 0 20px;
+	text-decoration: none;
+}
+
+.section.education {
+	margin-bottom: 0;
+}
