@@ -54,7 +54,6 @@
 		background: #fff;
 		font: 18px/26px "Georgia", "Times New Roman", serif;
 		color: #444;
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
 
