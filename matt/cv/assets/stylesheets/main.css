@@ -67,7 +67,7 @@ header .contact-info a {
 	font-size: 16px;
 }
 
-.experience .site-link {
+.experience .site-link, .projects .site-link {
 	display: block;
 	color: #C75C4A;
 	margin: 0 0 20px;
