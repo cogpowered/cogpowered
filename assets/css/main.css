@@ -43,7 +43,7 @@ footer .logo { background:url('../img/footer-logo.png') no-repeat; width:51px; h
 footer #sitemap { list-style:none; position:relative; }
 footer #sitemap ul { margin:0; }
 footer #sitemap ul li { display:inline-block; }
-footer #sitemap ul li > a { color:#8E959C; font-weight:300; letter-spacing:0.15em; text-transform:uppercase; }
+footer #sitemap ul li > a { color:#8E959C; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; }
 footer #sitemap ul.left li { margin-right:50px; }
 footer #sitemap ul.right li { margin-left:50px; }
 
